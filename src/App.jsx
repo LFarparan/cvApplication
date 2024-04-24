@@ -1,5 +1,8 @@
-import { useState } from 'react'
+import { useState, createContext } from 'react'
 import General from './components/General'
+
+export const UserContext = createContext();
+
 
 export default function App(){
   
