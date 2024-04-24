@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.gencon{
+    width: max(400px, 40%);
+    border: 3px solid gray;
+    padding: 1rem;
+    line-height: 1.8rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+button{
+    width: 70px;
+    margin-top: 20px;
+    padding: .3rem .5rem;
+}
+
+input{
+    width: 200px;
+}
+
+input:required:invalid{
+    border-color: rgb(255, 83, 83);
+    width: 100%;
+}
+
+
+
