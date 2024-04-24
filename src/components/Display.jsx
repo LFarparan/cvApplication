@@ -1,13 +1,16 @@
-import 
+import React, { useContext } from "react";
+import { UserContext } from "../App";
+
 
 export default function Display(){
+    const {dname, demail, dphoneNo} = useContext(UserContext);
+
     return(
         <>
-            Name: {name} <br/>
-            Email: {email} <br/>
-            Phone no.: {phoneNo} <br/>
-        
-        
+            Name: {dname} <br/>
+            Email: {demail} <br/>
+            Phone no.: {dphoneNo} <br/>
         </>
     )
+    
 }

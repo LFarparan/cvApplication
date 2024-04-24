@@ -26,7 +26,7 @@ input{
 
 input:required:invalid{
     border-color: rgb(255, 83, 83);
-    width: 100%;
+
 }
 
 
