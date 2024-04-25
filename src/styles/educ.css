@@ -1,0 +1,10 @@
+.eduExp{
+    width: max(750px, 60%);
+    border: 3px solid gray;
+    padding: 1rem;
+    line-height: 1.8rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+}

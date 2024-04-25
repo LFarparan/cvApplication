@@ -3,16 +3,15 @@ import { UserContext } from "../App";
 import '../styles/general.css'
 
 export default function General(){
-    const {setDName, setName, setDEmail, setEmail, setDPhoneNo, setPhoneNo} = useContext(UserContext);
+    const {setName, setEmail, setPhoneNo} = useContext(UserContext);
 
-    function submitGeneral(event){
-        event.preventDefault();
+    function submitGeneral(){
         let namebox = document.getElementById('full_name');
         let emailbox = document.getElementById('email');
         let phonenobox = document.getElementById('phone_no');
-        setDName(namebox.value);
-        setDEmail(emailbox.value);
-        setDPhoneNo(phonenobox.value);
+        setName(namebox.value);
+        setEmail(emailbox.value);
+        setPhoneNo(phonenobox.value);
         namebox.disabled = true;
         emailbox.disabled = true;
         phonenobox.disabled = true;
@@ -27,7 +26,6 @@ export default function General(){
 
     return(
         <>
-            <form>
                 <div className="gencon">
                     <div className="labelsection">
                         <label htmlFor="full_name">Name:</label><br/>
@@ -36,13 +34,12 @@ export default function General(){
                         <button type='button' onClick={enableEdit}>EDIT</button>
                     </div>
                     <div className="inputsection">
-                        <input type="text" name="full_name" id="full_name" onChange={(e) => setName(e.target.value)} required/><br/>
-                        <input type="email" name="email" id="email" onChange={(e) => setEmail(e.target.value)} required/><br/>
-                        <input type="text" name="phone_no" id="phone_no" onChange={(e) => setPhoneNo(e.target.value)} required/><br/>
+                        <input type="text" name="full_name" id="full_name" required/><br/>
+                        <input type="email" name="email" id="email" required/><br/>
+                        <input type="text" name="phone_no" id="phone_no" required/><br/>
                         <button type="submit" id="submit" onClick={submitGeneral}>SUBMIT</button>
                     </div>
                 </div>
-            </form>
         </>
     )
 }
