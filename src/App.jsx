@@ -10,12 +10,12 @@ export default function App(){
   const [email, setEmail] = useState('');
   const [phoneNo, setPhoneNo] = useState('');
 
-  const [secname, setSecname] = useState('---');
-  const [tername, setTername] = useState('---');
-  const [sectitle, setSectitle] = useState('---');
-  const [tertitle, setTertitle] = useState('---');
-  const [secdate, setSecdate] = useState('---');
-  const [terdate, setTerdate] = useState('---');
+  const [secname, setSecname] = useState('');
+  const [tername, setTername] = useState('');
+  const [sectitle, setSectitle] = useState('');
+  const [tertitle, setTertitle] = useState('');
+  const [secdate, setSecdate] = useState('');
+  const [terdate, setTerdate] = useState('');
 
   return(
     <>

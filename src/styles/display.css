@@ -1,0 +1,12 @@
+.displaycon{
+    width: max(750px, 60%);
+    border: 3px solid gray;
+    padding: 1rem 2.5rem;
+    line-height: 1.8rem;
+    margin: auto;
+}
+
+h1{
+    margin: 1rem;
+    text-align: center;
+}

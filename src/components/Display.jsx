@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { UserContext } from "../App";
+import '../styles/display.css'
 
 
 export default function Display(){
@@ -8,11 +9,25 @@ export default function Display(){
 
     return(
         <>
-            Name: {name} <br/>
-            Email: {email} <br/>
-            Phone no.: {phoneNo} <br/>
-            Studied {sectitle} at {secname} and graduated by {secdate} <br/>
-            Studied {tertitle} at {tername} and graduated by {terdate}
+            {(name && email && phoneNo)  &&
+                <div className="displaycon">
+                        <div className="dgeneral">
+                            Name: {name} <br/>
+                            Email: {email} <br/>
+                            Phone no.: {phoneNo} <br/>
+                        </div>
+                    {(secname && sectitle && secdate)  &&
+                        <div className="seceduc">
+                            Studied {sectitle} at {secname} and graduated by {secdate} <br/>
+                        </div>
+                    }
+                    {(tername && tertitle && terdate)  &&
+                        <div className="tereduc">
+                            Studied {tertitle} at {tername} and graduated by {terdate}
+                        </div>
+                    }
+                </div>
+            }
         </>
     )
     

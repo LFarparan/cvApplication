@@ -6,6 +6,7 @@
 
 .gencon{
     width: max(750px, 60%);
+    margin: auto;
     border: 3px solid gray;
     padding: 1rem;
     line-height: 1.8rem;
