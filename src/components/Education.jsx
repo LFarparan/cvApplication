@@ -46,13 +46,13 @@ export default function Education(){
             <div className="schoolcon">
                 <label> School Name </label> <br/>
                 <input type="text" id="secname"/> <br/>
-                <input type="text" id="tername"/>
+                <input type="text" id="tername"/> <br/>
                 <button type="button" onClick={EditEduc}> EDIT </button>
             </div>
             <div className="studycon">
                 <label> Title of Study </label> <br/>
                 <input type="text" id="sectitle"/> <br/>
-                <input type="text" id="tertitle"/>
+                <input type="text" id="tertitle"/> <br/>
                 <button type="submit" onClick={submitEduc}> SUBMIT </button>
             </div>
             <div className="datecon">
